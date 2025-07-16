@@ -1,9 +1,10 @@
 /* === ESTILOS BASE === */
 html,body{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family:'Segoe UI', sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:'Segoe UI', sans-serif;
+  overflow-x: hidden;
     
 }
 
