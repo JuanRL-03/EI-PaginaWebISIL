@@ -301,7 +301,7 @@ header {
 
     @media (max-width: 480px) {
       .nomlogo {
-        display: none;
+        font-size: 0.8rem;
       }
       
       .header {
@@ -319,9 +319,7 @@ header {
       }
     }
 
-
 /*=========================================*/
-        /* Container General */
 /* Container General */
 .container {
     max-width: 1200px;
