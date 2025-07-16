@@ -299,7 +299,7 @@ header {
 
     @media (max-width: 480px) {
       .nomlogo {
-        display: none;
+        font-size: 0.8rem;
       }
       
       .header {
@@ -317,67 +317,99 @@ header {
       }
     }
 /*------------SLIDER--------------------*/
-    .conocenos-section {
-      position: relative;
-      background-image: url('../img/fondoNosotros.jpg'); /* Cambia esta ruta */
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      color: #fff;
-    }
+.conocenos-section {
+  position: relative;
+  background-image: url('../img/fondoNosotros.jpg'); /* Asegúrate de que esta ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrado en pantallas pequeñas */
+  color: #fff;
+  padding: 2rem;
+  text-align: left;
+}
 
-    .overlay {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 2rem;
-      max-width: 600px;
-      margin-left: 10%;
-      border-radius: 1rem;
-      animation: fadeInUp 1s ease-out both;
-    }
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 1rem;
+  animation: fadeInUp 1s ease-out both;
+}
 
-    .overlay h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-    .overlay p {
-      font-size: 1.2rem;
-    }
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
-    .overlay .btn {
-      background-color: #dc3545;
-      border: none;
-      padding: 0.6rem 1.5rem;
-      font-weight: bold;
-    }
+.overlay .btn {
+  background-color: #dc3545;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.5rem;
+}
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+/* Animación */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    @media (max-width: 768px) {
-      .overlay h1 {
-        font-size: 2rem;
-      }
+/* Tablet (768px o menos) */
+@media (max-width: 768px) {
+  .overlay {
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem;
+  }
 
-      .overlay p {
-        font-size: 1rem;
-      }
+  .overlay h1 {
+    font-size: 2rem;
+  }
 
-      .overlay {
-        margin: auto;
-        text-align: center;
-      }
-    }
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares (480px o menos) */
+@media (max-width: 480px) {
+  .overlay {
+    padding: 1rem;
+  }
+
+  .overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .overlay p {
+    font-size: 0.95rem;
+  }
+
+  .overlay .btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
     
 
     
